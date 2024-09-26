@@ -1,5 +1,5 @@
 # acf-flexible-copy-paste
-Copy and paste flexible layouts between pages
+A WordPress plugin that lets you copy and paste flexible layouts between pages.
 
 <img width="442" alt="immagine" src="https://github.com/user-attachments/assets/ebf318d8-fd7a-4c8b-81b1-dd3a8e04ee78">
 <br />
