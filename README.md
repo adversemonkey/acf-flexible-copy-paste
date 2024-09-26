@@ -9,6 +9,6 @@ A WordPress plugin that lets you copy and paste flexible layouts between pages.
 The copy don't work yet with the following field types: relationship, post, radio, datepicker, timepicker
 
 # Nice to have
-It should be better to use ACF's public native functions (acf.getField) to set the values of the fields in the ACFCP_compileField function.
-It has already been done with the types: link, color picker, gallery
+It should be better to use ACF's public native functions (acf.getField) to set the values of the fields in the ACFCP_compileField function.  
+It has already been done with the types: link, color picker, gallery.  
 Maybe it could be done in the getting values function (ACFCP_fieldGetData).
