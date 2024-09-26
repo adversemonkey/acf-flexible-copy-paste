@@ -1,0 +1,18 @@
+.ACFCP_copy svg,
+.ACFCP_paste svg {
+    width: 65%;
+    display: inline-block;
+    vertical-align: middle;
+    height: auto;
+}
+
+.ACFCP_copy:before,
+.ACFCP_copy:after,
+.ACFCP_paste:before,
+.ACFCP_paste:after {
+    display: none !important;
+}
+
+.ACFCP_paste {
+    color: #4B9A00 !important;
+}
