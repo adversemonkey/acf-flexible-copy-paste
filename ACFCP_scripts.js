@@ -152,6 +152,8 @@
         } else if (node.find("input[type='checkbox']:checked").length) {
             // checkbox
             value = node.find("input[type='checkbox']:checked").val();
+        } else if (node.attr("data-type") == "range") {
+            value = node.find("input[type='range']").eq(0).val();
         } else if (node.find("input[type='text'], input[type='tel'], input[type='url'], input[type='password'], input[type='email']").length) {
             // text, tel, url, password, email
             value = node.find("input[type='text'], input[type='tel'], input[type='url'], input[type='password'], input[type='email']").eq(0).val();
@@ -314,6 +316,9 @@
             node.find("textarea").val(value);
         } else if (node.find("input[type='checkbox']").length) {
             node.find("input[type='checkbox'][value='"+value+"']").prop("checked", true);
+        } else if (node.attr("data-type") == "range") {
+            node.find("input[type='range']").val(value);
+            node.find("input[type='number']").val(value);
         } else if (node.find("input[type='text'], input[type='tel'], input[type='url'], input[type='password'], input[type='email']").length) {
             node.find("input[type='text'], input[type='tel'], input[type='url'], input[type='password'], input[type='email']").val(value);
         }
